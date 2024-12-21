@@ -1,16 +1,6 @@
-# Store the version here so:
-# 1) we don't load dependencies by storing it in __init__.py
-# 2) we can import it in setup.py for the same reason
-# 3) we can import it into your module module
-# https://stackoverflow.com/questions/458550/standard-way-to-embed-version-into-python-package
-
-__version__ = '1.62.3'
-
-release_notes = {
-    '1.62.3': """
-    Updating strategy for launching Epic version of Rocket League. - tarehart
+Updating strategy for launching Epic version of Rocket League. - tarehart
     Fixing race conditions in the Epic launch process. - SavageSnowgoose
-    Restoring ability to fall back to Steam after failed Epic launch. - tarehart
+    Restoring ability to fall back to Steam after Epic launch. - tarehart
     """,
     '1.61.1': """
     Getting flatbuffers from pypi instead of bundling the source directly. - tarehart + CodeRed
@@ -102,12 +92,12 @@ release_notes = {
     Also:
     - Set the current working directory of bots to their folder.
     - Do less manipulation of modules when loading bots to reduce weird bugs.
-    - Small improvements to hive bot. - Will
+    - Small improvements to hive bot.
     """,
     '1.41.0': """
     Adding more flags for starting matches: enableRendering, enableStateSetting, autoSaveReplay. Also:
     - Mac and Linux users can now use 'q' and 'r' commands to quit or reload bots. - naturecodevoid
-    - Update gravity+gamespeed variables in gametickpacket when changed by statesetting. - Kipje13
+    - Update gravity+gamespeed variables in gametickpacket when changed by statesetting.
     """,
     '1.40.1': """
     Support for Heatseeker game mode, including ball prediction thanks to Recruit_main and GodGamer!
@@ -119,7 +109,7 @@ release_notes = {
 
     Also:
     - Fixing color swatch translation. - Darxeal and tarehart
-    - Catching errors in hive bots. - Will
+    - Catching errors in hive bots. - 
     """,
     '1.38.1': """
     Ball prediction is now computed at 120Hz instead of 60Hz!
@@ -140,7 +130,7 @@ release_notes = {
     Proper appearances for Psyonix bots thanks to Marvin, with an assist from r0bbi3!
 
     Also:
-    - Improved error messages. - Will
+    - Improved error messages. - 
     - Fixing bug when trying to spawn tons of cars. - tare
     - Starting on hivemind support classes. Stay tuned! - Will
     - Improving C# documentation. - Redox
@@ -314,15 +304,9 @@ release_notes = {
 
     For now, the chat will use hacky rendering since we don't have official support yet.
 
-    For richer communication with coordinates etc, check out
-    https://github.com/RLBot/RLBot/wiki/Matchcomms
+    For richer communication with coordinates etc
 
-    Latest ball touch is also back!
-    """,
-    '1.16.5': """
-    Communication to and between bots is now possible!
-    See: https://github.com/RLBot/RLBot/wiki/Matchcomms
-
+    Latest ball touch is also back
     - Support match communication (matchcomms). - DomNomNom
     - Warning when Rocket League is not running in -rlbot mode. - tarehart
     - Fix Python 3.6 compatibility. - DomNomNom
@@ -331,8 +315,7 @@ release_notes = {
     - Warnings when you try to use unsupported aspects of state setting - tarehart
     - Avoid needing to manually click Steam confirmation about -rlbot mode. - DomNomNom
     - Brought back the stall mechanic. - tarehart
-    """,
-
+  
     '1.15.10': """
     Read all about our integration with the new Psyonix API!
     https://github.com/RLBot/RLBot/wiki/Psyonix-API-Notes
@@ -347,10 +330,6 @@ release_notes = {
 
     '1.15.7': """
     Integrating with official Psyonix API! Read all about it at
-    https://github.com/RLBot/RLBot/wiki/Psyonix-API-Notes
-
-    Big thanks to Jared Cone and the whole team over at Psyonix!
-
     Post-release fixes:
     - Fixing dodge angle
     - Support for rigid body tick (now including frame counts)
@@ -439,9 +418,6 @@ release_notes = {
     """,
 
     '1.7.0': """
-    The big news: We now support painted items thanks to ccman32!
-    See https://github.com/RLBot/RLBot/wiki/Bot-Customization for details.
-
     Other stuff:
     - Fix for tradeable items not displaying correctly after December update. - ccman32
     - Sending invalid controller inputs will no longer make your bot freeze,
